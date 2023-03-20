@@ -61,7 +61,10 @@ This function should only modify configuration layer settings."
    ;; `dotspacemacs/user-config'. To use a local version of a package, use the
    ;; `:location' property: '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(
+    ;; evil-ediff was removed from elpa, but is still referenced in spacemacs-edit layer...
+    (evil-ediff :location (recipe :fetcher github :repo "emacs-evil/evil-ediff"))
+   )
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
