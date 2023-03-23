@@ -13,4 +13,4 @@ fi
 
 alias cht="cht.sh"
 alias i3config="vim $HOME/.config/i3/config"
-alias config='/usr/bin/git --git-dir=/home/eric/.cfg/ --work-tree=/home/eric'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
